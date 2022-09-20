@@ -9,7 +9,6 @@ namespace Geometria
     class Kor
     {
         double sugar;
-        double atmero;
 
         public double Sugar
         {
@@ -26,7 +25,12 @@ namespace Geometria
                 }
             }
         }
-   
+
+        public Kor(double sugar)
+        {
+            Sugar = sugar;
+        }
+
         public double Atmero { get => sugar * 2; }
 
         public double Kerulet()
