@@ -17,7 +17,7 @@ namespace Geometria
             get => aOldal;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException($"'a' oldal értéke: {value}-val/vel nem szerkezthető a háromszög!!!");
                 }
@@ -32,7 +32,7 @@ namespace Geometria
             get => bOldal;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException($"'b' oldal értéke: {value}-val/vel nem szerkezthető a háromszög!!!");
                 }
@@ -47,7 +47,7 @@ namespace Geometria
             get => cOldal;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException($"'c' oldal értéke: {value}-val/vel nem szerkezthető a háromszög!!!");
                 }
